@@ -1,0 +1,58 @@
+.service-info{
+    .title-service{
+        @include titulos;
+        margin-top: 3%;
+        text-decoration: underline;
+    }
+    .service-options{
+        width: 100%;
+        margin: 5% auto;
+        background: $bg_clarito;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .servicios-item{
+            width: 300px;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: $bg_oscuro;
+            text-decoration: none;
+            padding: 10px;
+            &:hover{
+                cursor:pointer;
+                transition: 0.5s ease-in-out;
+                border-radius: 10px;
+                color: $bg_amarillo;
+                background: $bg_oscuro; 
+                a{
+                    color: $bg_amarillo;
+                }
+            }
+            .icon-service{
+                font-size: 5rem;
+            }
+            .title-item{
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            .list-item{
+                list-style: none;
+                text-align: center;
+                padding: 10px 35px;
+            }
+            a{
+                color: $bg_oscuro;
+            }
+        }
+    }
+}
+
+.option{
+    min-height: 455px;
+    max-height: 455px;
+}

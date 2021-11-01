@@ -7,10 +7,19 @@
     <meta name="description" content="Here you find the way you can contact me">
     <meta name="keywords"  content="name, company, charge, contact me, email">
     <title>Contact ✉</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    <link href="estilos.css" rel="stylesheet"/>
+    <link href="./node_sass/css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
      <!--Menu navegacion-->
@@ -20,7 +29,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">F<span>S</span></a>
+                <a class="navbar-brand" href="index.html"><img src="./imagenes/apple-touch-icon.png" alt="icono home"></a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                       <li class="nav-item">
@@ -42,32 +51,52 @@
       </header>
     <main>
         <!--Contact Form-->
-        <section class="content"> 
-            <form method="POST">
-                <div class="title">
-                    <h2>Let´s talk</h2>
+        <div class="formulario">
+            <h1 class="logo">Let´s <span>talk</span></h1>
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Contact us</h3>
+                    <form action="">
+                        <p>
+                            <label>FullName</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email Adress</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Company</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">
+                           <label>Proposal information</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <button>
+                            <input type="submit" class="enviar">
+                        </button>
+                        <button>
+                            <input type="reset" class="resetear">
+                        </button>
+
+                    </form>
                 </div>
-                <div class="data">
-                    <input type="text" id="Name" placeholder="Name" required="true" class="input-48">    
-                    <input type="text" id="Surname" placeholder="Surname" required="true" class="input-48"> 
-                    <input type="text" id="Company" placeholder="Company" required="true" class="input-100"> 
+                <div class="contact-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Tandil, Buenos Aires, Argentina</li>
+                        <li><i class="fas fa-phone"></i> (249) 4624772</li>
+                        <li><i class="fas fa-envelope-open-text"></i> fsosa1997@gmail.com</li>
+                    </ul>
+                    <p>I´m only looking for opportunities 100% remote in Argentina or relocate in Europe</p>
                 </div>
-                <div class="contract">
-                    <select name="Modality" id="Modality">
-                        <option value="Dependence">Dependence relation</option>
-                        <option value="Freelance">Freelance</option>
-                    </select> 
-                </div>
-                <div class="text">
-                    <textarea name="" id="" cols="62" rows="10" placeholder="Add more info"></textarea>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Submit"/>
-                    <input type="reset" value="Reset">
-                </div>
-            </fieldset>
-            </form>
-        </section>
+            </div>
+        </div>
     </main>
     <!--Social Media-->
     <footer>
@@ -79,6 +108,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-
 </body>
 </html>

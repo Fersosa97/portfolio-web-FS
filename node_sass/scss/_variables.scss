@@ -1,0 +1,19 @@
+$bg_amarillo: #ffe14c;
+$bg_oscuro: #040707;
+$bg_rojo: #ae0019;
+$bg_claro: #fff;
+$bg_clarito: #edf5f7;
+
+@mixin titulos{
+    font-family: 'Russo One', sans-serif;
+    font-size: 4rem;
+}
+@mixin contacto{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #ffe14c;
+}

@@ -1,0 +1,159 @@
+@mixin propiedadTarjetas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+}
+
+.game{
+    margin: 2% 0px;
+    .title-game{
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 20px 60px;
+        text-align: center;
+        color: $bg_oscuro;
+    }
+    .wrap{
+        width: 1000px;
+        margin: 25px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .tarjeta-wrap{
+            margin: 1.8rem;
+            -webkit-perspective: 800;
+            perspective: 800;
+            &:hover .tarjeta{
+                transform: rotateY(180deg);
+                border: 3px solid $bg_claro;
+            }
+            .tarjeta{
+                width: 16rem;
+                height: 18rem;
+                background-color: $bg_claro;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: .7s ease;
+                -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,.65);
+                -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,.65);
+                box-shadow: 0px 10px 15px -5px rgba(0,0,0,.65);
+                cursor: pointer;
+                border-radius: 10px;
+                border: 3px solid $bg_oscuro;
+                .adelante{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include propiedadTarjetas;    
+                    i{
+                        font-size: 12rem;
+                        color: $bg_oscuro;
+                    }
+                }
+                .atras{
+                    transform: rotateY(180deg);
+                    padding: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    text-align: center;
+                    background-color: $bg_oscuro;
+                    color: $bg_claro;
+                    border-radius: 10px; 
+                    @include propiedadTarjetas;
+                    p{
+                        font-size: 1.5rem;
+                        font-size: bold;
+                    }
+                    a{
+                        display: block;
+                        color: $bg_claro;
+                        margin: auto;
+                        margin: 10px;
+                        align-items: center;
+                    }
+                }
+            }  
+        } 
+    }
+}
+.fotos{
+    width: 100%;
+    height: auto;
+    background-color: #929295;
+    .imagenesTandil{
+        width: 100%;
+        max-width: 1200px;
+        margin: 5% auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 40px;
+        .item{
+            background-color: $bg_claro;
+            cursor: pointer;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+            transition: all 300ms;
+            border-radius: 8px;
+            position: relative;
+            :hover{
+                transform: scale(1.05);
+            }
+            &::after{
+                content: "";
+                background-color: rgba(179, 229, 252, .1);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: scale(0);
+                transition: all 300ms;
+                opacity: 0;
+                border-radius: 8px;
+            }  
+            :hover:after{
+                opacity: 1;
+                transform: scale(1);
+            }
+            .item-text{
+                padding: 1em;
+            }
+            .item-img{
+                width: 100%;
+                display: block;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+        }  
+    }
+}
+
+@media screen and (min-width: 590px) {
+    .imagenesTandil{
+        grid-template-columns: repeat(2, 1fr);
+        .item-img{
+            max-height: 200px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .imagenesTandil{
+        grid-template-columns: repeat(3, 1fr);
+        .item-img{
+            max-height: 230px;
+            overflow: hidden;
+        }
+    }
+  }
+  
+
+    
+  

@@ -20,12 +20,43 @@ body{
 
 /*******************************************************************    NAVBAR  ****************************************************************************/
 
-.navColor{
-    background-color: #000;
-} 
+.navColor {
+  background-color: #040707;
+}
 
-li{
-    font-size: 20px;
+.navColor .navbar-brand img {
+  margin-top: 3px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.navColor .navbar-brand img:hover {
+  border: 4px solid #ffe14c;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-box-shadow: 0 0 20px #ffe14c, 0 0 20px, #ffe14c 0 0 20px;
+          box-shadow: 0 0 20px #ffe14c, 0 0 20px, #ffe14c 0 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-collapse {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .navbar-collapse .nav-item .nav-link {
+    font-size: 1.5rem;
+    padding: .8rem;
+    font-weight: 600;
+  }
+  .navbar-collapse .nav-item .nav-link:hover {
+    color: #ffe14c;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
 }
 
 
@@ -35,7 +66,6 @@ li{
   width: 100%;
   height: 100vh;
   background-color: #040707;
-  
 }
 
 .block{
@@ -199,16 +229,6 @@ li{
 .game{
     margin: 2% 0px;
 }
-
-.target{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.target-img{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
 .title-game{
     font-size: 3rem;
     font-weight: 800;
@@ -307,7 +327,7 @@ li{
 .fotos{
   width: 100%;
   height: auto;
-  background-color: #929295;
+  background-color: #222222;
   
 }
 
@@ -449,7 +469,66 @@ li{
 
 .service-info{
     background-color: #edf5f7;
-    
+    height:85vh;
+}
+
+.title-service{
+  font-family: 'Russo One', sans-serif;
+  font-size: 4rem;
+
+}
+
+.service-options{
+  max-width: 1200px;
+  margin: 75px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.servicios-item{
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #040707;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.servicios-item a{
+  color: #000;
+}
+
+.icon-service{
+  font-size: 5rem;
+}
+
+.servicios-item:hover{
+  cursor:pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  color: #ffe14c;
+  background: #040707;
+}
+
+.servicios-item:hover a{
+  color: #ffe14c;
+}
+
+.title-item{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.list-item{
+  list-style: none;
+  text-align: center;
+  padding: 10px 35px;
 }
 
 .option{
@@ -461,111 +540,114 @@ li{
 
 /*******************************************************************   CONTACT  ****************************************************************************/
 
-.content{
-    margin: 50px auto;
-    max-width: 500px;
-    background: rgba(0,0,0,0.2);
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;    
+label{
+  color: white;
+  font-size: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.content .title{
-    background: #000;
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 100;
-    border-top-right-radius: 20px;
-    border-bottom: 5px solid white;
-  
+.logo {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
 }
 
-::placeholder{
-    color: black;
-    padding: 5px;
-    font-size: 15px;
+.logo span {
+  color: #B70E21;
 }
 
-                    /*Datos del contacto */
-
-.content .data{  
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
-.data input{
-    border-radius: 5px;
-    border: 1px solid darkgray;
-    margin: 30px 5px 5px 5px;    
-    font-size: 14px;
-    padding: 8px;   
-    color:black;
+.contact-wrapper > * {
+  padding: 1em;
 }
 
-
-.input-50{
-    width: 50%;
+.contact-form {
+  background: #222222;
 }
 
-.input-100{
-    width: 100%;
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.content .contract{
-    margin: 20px;
-    
+.contact-form form label {
+  display: block;
 }
 
-.content .contract select{
-    font-size: 20px;
-    width: 100%;
-    background: #000;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
 }
 
-.content .text{
-    margin-top: 40px;
-    margin-left: 13px;
-    border-radius: 8px;  
+.contact-form form .block {
+  grid-column: 1 / 3;
 }
 
-.content .button{
-    width: 100%;
-    text-align: center;
-
-}
-
-.content .button input[type="submit"]{
-    background: #000;
-    color: white;
-    border-radius: 0px 15px 0px 10px;
-    cursor:pointer;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 50px 20px;
-   
-}
-
-.content .button input[type="reset"]{
-    background: #000;
-    color: white;
-    border-radius: 0px 15px 0px 10px;
-    cursor:pointer;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 50px 20px;
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #ffe14c;
 }
 
 
+.contact-form form button {
+  background: #B70E21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition:  1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+  color: white;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  .formulario{
+      padding: 0 4em;
+      margin-top: 5%;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
 
                       /* Footer*/
 .social-media{
