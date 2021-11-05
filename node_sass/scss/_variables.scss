@@ -17,3 +17,16 @@ $bg_clarito: #edf5f7;
     color: #fff;
     border-bottom: 1px solid #ffe14c;
 }
+@mixin timeline{
+    background: $bg_clarito;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: $bg_rojo;
+    font-size: 27px;
+    box-shadow: 0 0 0 4px $bg_clarito, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+   
+}
