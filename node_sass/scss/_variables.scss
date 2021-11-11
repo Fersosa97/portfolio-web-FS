@@ -28,5 +28,8 @@ $bg_clarito: #edf5f7;
     color: $bg_rojo;
     font-size: 27px;
     box-shadow: 0 0 0 4px $bg_clarito, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
-   
+}
+
+@mixin iconos{
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 }

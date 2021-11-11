@@ -30,7 +30,9 @@
             font-size: 4.3rem;
             margin: 90px 0px 90px 0px;
         }
-        .amarillo{
+        .typed{
+            font-weight: bold;
+            font-style: normal;
             color: $bg_amarillo;
         }
         .block{
@@ -129,8 +131,17 @@
             letter-spacing: 1px;
             font-weight: 500;
         }
+        .btn-danger{
+            background-color: $bg_oscuro;
+            border-color: $bg_amarillo;
+        }
         .text-btn{
             margin-top: 60px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.3rem;
+            }
         }
     }
 }
@@ -139,14 +150,10 @@
     .index__title{
         .index__contenido{
             .signo{
-                font-size: 6rem;
-            }
-            .abierto{
-                top: 0;
-                left: 6%;
+                display: none;
             }
             .parrafo{
-                top: 16%;
+                top: 10%;
                 left: 10%;
                 font-size: 2rem;
                 padding: 0px 12px;
@@ -158,13 +165,9 @@
                     display: inline-block;
                 }
             }
-            .cierre{
-                top: 60%;
-                left: 85%;
-            }
             .btn-neon{
-                top: 83%;
-                left: 24%;
+                top: 72%;
+                left: 22%;
                 padding: 10px 20px;
             }
         }
@@ -199,7 +202,7 @@
                 left: 89%;
             }
             .btn-neon{
-                top: 83%;
+                top: 75%;
                 left: 24%;
                 padding: 15px 25px;
             }
@@ -234,6 +237,7 @@
                 left: 86%;
             }
             .btn-neon{
+                top: 75%;
                 left: 40%;
             }
         }
@@ -268,6 +272,7 @@
                 left: 90%;
             }
             .btn-neon{
+                top: 75%;
                 left: 40%;
             }
         }
@@ -305,6 +310,7 @@
                 left: 85%;
             }
             .btn-neon{
+                top: 75%;
                 left: 45%;
             }
         }

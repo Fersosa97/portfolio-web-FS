@@ -27,10 +27,6 @@
             margin: 1.8rem;
             -webkit-perspective: 800;
             perspective: 800;
-            &:hover .tarjeta{
-                transform: rotateY(180deg);
-                border: 3px solid $bg_claro;
-            }
             .tarjeta{
                 width: 16rem;
                 height: 18rem;
@@ -79,6 +75,12 @@
                     }
                 }
             }  
+            &:hover{
+                .tarjeta{
+                    transform: rotateY(180deg);
+                    border: 3px solid $bg_claro;  
+                }
+            }
         } 
     }
 }
@@ -91,7 +93,7 @@
         max-width: 1200px;
         margin: 5% auto;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
         padding: 40px;
         .item{
@@ -101,9 +103,6 @@
             transition: all 300ms;
             border-radius: 8px;
             position: relative;
-            :hover{
-                transform: scale(1.05);
-            }
             &::after{
                 content: "";
                 background-color: rgba(179, 229, 252, .1);
@@ -116,10 +115,13 @@
                 transition: all 300ms;
                 opacity: 0;
                 border-radius: 8px;
-            }  
-            :hover:after{
-                opacity: 1;
-                transform: scale(1);
+            } 
+            &:hover{
+                transform: scale(1.05);
+                &:after{
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
             .item-text{
                 padding: 1em;
@@ -134,26 +136,164 @@
     }
 }
 
-@media screen and (min-width: 590px) {
-    .imagenesTandil{
-        grid-template-columns: repeat(2, 1fr);
-        .item-img{
-            max-height: 200px;
-            overflow: hidden;
+@media screen and (min-width:320px) and (max-width:424px){
+    .game{
+        margin: 5% 0px;
+        .title-game{
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 20px 30px;
+        }
+        .wrap{
+            max-width: 300px;
+            margin: 10px auto;
+            .tarjeta-wrap{
+                margin:.5rem;
+                .tarjeta{
+                    width: 8rem;
+                    height: 10rem;
+                    .adelante{
+                        i{
+                            font-size: 6rem;
+                        }
+                    }
+                    .atras{
+                        padding: 6px;
+                        p{
+                            font-size: .8rem;
+                        }
+                        a{
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-@media screen and (min-width: 960px) {
-    .imagenesTandil{
-        grid-template-columns: repeat(3, 1fr);
-        .item-img{
-            max-height: 230px;
-            overflow: hidden;
+@media screen and (min-width:425px) and (max-width:767px){
+    .game{
+        margin: 5% 0px;
+        .title-game{
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 20px 30px;
+        }
+        .wrap{
+            max-width: 400px;
+            margin: 10px auto;
+            .tarjeta-wrap{
+                margin:.8rem;
+                .tarjeta{
+                    width: 10rem;
+                    height: 12rem;
+                    .adelante{
+                        i{
+                            font-size: 8rem;
+                        }
+                    }
+                    .atras{
+                        padding: 6px;
+                        p{
+                            font-size: 1rem;
+                        }
+                        a{
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
         }
     }
-  }
-  
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .game{
+        margin: 5% 0px;
+        .title-game{
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 20px 40px;
+        }
+        .wrap{
+            max-width: 700px;
+            margin: 10px auto;
+            .tarjeta-wrap{
+                margin: 1rem;
+                .tarjeta{
+                    width: 12rem;
+                    height: 14rem;
+                    .adelante{
+                        i{
+                            font-size: 9rem;
+                        }
+                    }
+                    .atras{
+                        padding: 5px;
+                        p{
+                            font-size: 1.2rem;
+                        }
+                        a{
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) {
+    .fotos{
+        .imagenesTandil{
+            grid-template-columns: repeat(1, 1fr);
+            .item{
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:500px){
+    .fotos{
+        .imagenesTandil{
+            .item{
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .fotos{
+        .imagenesTandil{
+            grid-template-columns: repeat(2, 1fr);
+            .item{
+                .item-img{
+                    max-height: 200px;
+                    overflow: hidden;
+                }   
+            }
+            
+        } 
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+    .fotos{
+        .imagenesTandil{
+            grid-template-columns: repeat(3, 1fr);
+            .item{
+                .item-img{
+                    max-height: 230px;
+                    overflow: hidden;
+                }   
+            }
+        }  
+    }
+}
+ 
+
 
     
   
