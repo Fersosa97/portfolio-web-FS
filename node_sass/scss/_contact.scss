@@ -14,7 +14,8 @@
             padding: 1em;
         }
         .contact-form {
-            background: #222222;
+            background: #303036;
+            color: white;
             form {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -38,7 +39,7 @@
                     padding: 1em;
                     margin: 10px;
                     &:hover , :focus{
-                        background: $bg_amarillo;
+                        background: $bg_naranja;
                         transition: background-color 1s ease-out;
                         outline: 0;
                         input{

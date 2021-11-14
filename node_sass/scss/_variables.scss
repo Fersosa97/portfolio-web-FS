@@ -1,12 +1,20 @@
-$bg_amarillo: #ffe14c;
-$bg_oscuro: #040707;
-$bg_rojo: #ae0019;
+$bg_naranja: #db4326;
+$bg_oscuro: #05111c;
 $bg_claro: #fff;
 $bg_clarito: #edf5f7;
+$bg_azul: #004e64;
+$bg_celeste: #c5e0e6;
+
+@mixin signos{
+    font-size: 10rem;
+    font-weight: 500;
+    color: $bg_naranja; 
+}
 
 @mixin titulos{
     font-family: 'Russo One', sans-serif;
     font-size: 4rem;
+    color: $bg_azul;
 }
 @mixin contacto{
     width: 100%;
@@ -14,20 +22,20 @@ $bg_clarito: #edf5f7;
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #ffe14c;
+    color: $bg_clarito;
+    border-bottom: 1px solid $bg_naranja;
 }
 @mixin timeline{
-    background: $bg_clarito;
+    background: $bg_claro;
     position: absolute;
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: $bg_rojo;
+    color: $bg_azul;
     font-size: 27px;
-    box-shadow: 0 0 0 4px $bg_clarito, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 4px $bg_azul, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 
 @mixin iconos{

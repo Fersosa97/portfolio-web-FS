@@ -7,15 +7,51 @@
     -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
 }
+.card-info{
+    margin: 5% auto;
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        .title-card{
+            font-size: 3rem;
+            text-align: center;
+        }
+        .text-card{
+            font-size: 1.2rem;
+            text-align: justify;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .btn-danger{
+            background-color: $bg_oscuro;
+            border-color: $bg_naranja;
+        }
+        .text-btn{
+            margin-top: 60px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
 
 .game{
     margin: 2% 0px;
-    .title-game{
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 20px 60px;
-        text-align: center;
-        color: $bg_oscuro;
+    background-color: $bg_celeste;
+    .content-game{
+        border-radius:0% 100% 50% 50% / 0% 0% 100% 100%;
+        background-color: $bg_clarito;
+        padding-bottom: 75px;
+        .title-game{
+            @include titulos;
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 20px 60px;
+            text-align: center;
+            color: $bg_oscuro;
+        }
     }
     .wrap{
         width: 1000px;
@@ -88,7 +124,6 @@
 .fotos{
     width: 100%;
     height: auto;
-    background-color: #929295;
     .imagenesTandil{
         width: 100%;
         max-width: 1200px;

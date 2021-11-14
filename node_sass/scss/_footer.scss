@@ -1,18 +1,23 @@
 footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 2rem;
+  .social-media{
     position: absolute;
+    top: 0;
+    left: 0;  
     width: 100%;
-    flex-direction: row;
-    font-size: 2rem;
-    text-decoration: none;
-    .social-media{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a{
       text-decoration: none;
+      width: 100%;
+      padding-right: 20px;
       color: $bg_oscuro;
-      padding: 10px;
     }
-  }
-  
+  } 
+}

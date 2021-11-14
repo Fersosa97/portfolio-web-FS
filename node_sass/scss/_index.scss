@@ -1,64 +1,65 @@
-.index__title{
-  width: 100%;
-  height: 100vh;
-  background-color:$bg_oscuro;
-  .index__contenido{
-    color: $bg_claro;
+.index__contenido{
+    color: $bg_oscuro;
+    background-color:$bg_clarito;
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
-    .signo{
-        font-size: 10rem;
-        font-weight: 500;
-        color: $bg_amarillo;
-    }
-    .abierto{
+    height: 83vh;
+    .signo_abierto{
         position: absolute;
         top: 5%;
-        left: 25%;
+        left: 17%;
+        p{
+            @include signos;
+        }
     }
     .parrafo{
         position: absolute;
-        top: 18%;
+        top: 20%;
         left: 30%;
+        color: $bg_azul;
         font-family: 'Russo One', sans-serif;
         font-size: 2.8rem;
         font-weight: 500;
         .main-parrafo{
-            font-size: 4.3rem;
-            margin: 90px 0px 90px 0px;
+            font-size: 6rem;
+            margin: 60px 0px 40px 0px;
         }
         .typed{
             font-weight: bold;
             font-style: normal;
-            color: $bg_amarillo;
+            color: $bg_naranja;
         }
         .block{
             display:block;
         }
     }
-    .cierre{
+    .signo_cierre{
         position: absolute;
-        top: 44%;
-        left: 75%;
+        top: 55%;
+        left: 80%;
+        p{
+            @include signos;
+        }
+
     }
     .btn-neon{
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 45%;
         display: inline-block;
         padding: 15px 30px;
-        color:$bg_claro;
+        color:$bg_azul;
+        font-weight: 500;
         letter-spacing: 4px;
         font-size: 24px;
         text-decoration: none;
         overflow: hidden;
         transition: 0.2s;
         &:hover{
-            background: $bg_amarillo; 
-            box-shadow: 0 0 10px $bg_amarillo, 0 0 40px, $bg_amarillo 0 0 80px;
+            background: $bg_naranja; 
+            box-shadow: 0 0 10px $bg_naranja, 0 0 40px, $bg_naranja 0 0 80px;
             transition-delay: 1s;
             color: $bg_oscuro;
             #span1{
@@ -90,65 +91,36 @@
             left: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent,$bg_amarillo);  
+            background: linear-gradient(90deg, transparent,$bg_naranja);  
         }
         #span2{
             top: -100%;
             right: 0;
             width: 2px;
             height: 100%;
-            background: linear-gradient(180deg,transparent,$bg_amarillo);
+            background: linear-gradient(180deg,transparent,$bg_naranja);
         }
         #span3{
             bottom: 0;
             right: -100%;
             width: 100%;
             height: 2px;
-            background: linear-gradient(270deg, transparent,$bg_amarillo);
+            background: linear-gradient(270deg, transparent,$bg_naranja);
         }
         #span4{
             bottom: -100%;
             left: 0;
             width: 2px;
             height: 100%;
-            background: linear-gradient(360deg,transparent,$bg_amarillo);
+            background: linear-gradient(360deg,transparent,$bg_naranja);
         }
     }    
-  }
-}
-.card-info{
-    margin: 10% auto;
-    .card-body{
-        display: flex;
-        flex-direction: column;
-        .title-card{
-            font-size: 3rem;
-            text-align: center;
-        }
-        .text-card{
-            font-size: 1.2rem;
-            text-align: justify;
-            letter-spacing: 1px;
-            font-weight: 500;
-        }
-        .btn-danger{
-            background-color: $bg_oscuro;
-            border-color: $bg_amarillo;
-        }
-        .text-btn{
-            margin-top: 60px;
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 1.3rem;
-            }
-        }
-    }
 }
 
+
+
 @media screen and (min-width:320px) and (max-width:424px){
-    .index__title{
-        .index__contenido{
+    .index__contenido{
             .signo{
                 display: none;
             }
@@ -172,10 +144,9 @@
             }
         }
     }
-}
+
 
 @media screen and (min-width:425px) and (max-width:767px){
-    .index__title{
         .index__contenido{
             .signo{
                 font-size: 7rem;
@@ -208,9 +179,8 @@
             }
         }
     }
-}
+
 @media screen and (min-width:768px) and (max-width:1023px){
-    .index__title{
         .index__contenido{
             .signo{
                 font-size:10rem;
@@ -242,10 +212,9 @@
             }
         }
     }   
-}
+
 
 @media screen and (min-width:1024px) and (max-width:1439px){
-    .index__title{
         .index__contenido{
             .signo{
                 font-size:10rem;
@@ -269,7 +238,7 @@
             }
             .cierre{
                 top: 50%;
-                left: 90%;
+                left: 85%;
             }
             .btn-neon{
                 top: 75%;
@@ -277,7 +246,7 @@
             }
         }
     }   
-}
+
 
 @media screen and (min-width:1440px){
     .navbar-collapse{
@@ -307,7 +276,7 @@
             }
             .cierre{
                 top: 50%;
-                left: 85%;
+                left: 80%;
             }
             .btn-neon{
                 top: 75%;

@@ -1,8 +1,7 @@
 .miServicios{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: $bg_clarito;
-    padding-bottom: 10px;
     .tipo-deServicio{
         background: $bg_clarito;
         color: $bg_oscuro;
@@ -14,6 +13,7 @@
             @include titulos;
         }
         ul{
+            margin-bottom: 0;
             li{
                display: inline-block; 
                list-style: circle;
