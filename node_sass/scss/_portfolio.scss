@@ -6,7 +6,6 @@
   padding-bottom: 20px;
   text-align: center;
   border-radius:50% 100% 50% 50% / 0% 0% 100% 100%;
- 
   h1{
     @include titulos;
     font-weight: bolder;
@@ -18,14 +17,14 @@
     margin: 40px auto;
     padding: 0 20px;
     position: relative;
-  .center-line{
-    position: absolute;
-    height: 100%;
-    width: 4px;
-    background: $bg_azul;
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%);
+    .center-line{
+      position: absolute;
+      height: 100%;
+      width: 4px;
+      background: $bg_azul;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
     .scroll-icon{
       bottom: 0px;
       left: 50%;
@@ -153,6 +152,13 @@
 }
 
 @media(max-width: 440px){
+  .title_portfolio{
+    padding: 10px;
+    h1{
+      font-size: 2rem;
+
+    }
+  }
   .wrapper{
     .center-line{
       display: none;

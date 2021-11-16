@@ -61,7 +61,7 @@
             background: $bg_naranja; 
             box-shadow: 0 0 10px $bg_naranja, 0 0 40px, $bg_naranja 0 0 80px;
             transition-delay: 1s;
-            color: $bg_oscuro;
+            color: $bg_clarito;
             #span1{
                 left: 100%;
                 transition: 1s;
@@ -121,93 +121,103 @@
 
 @media screen and (min-width:320px) and (max-width:424px){
     .index__contenido{
-            .signo{
-                display: none;
+        .signo_abierto , .signo_cierre{
+            display: none;
+        }
+        .parrafo{
+           top: 15%;
+           left: 10%;
+           font-size: 2rem;
+           padding: 0px 12px;
+           text-align: center;
+           .main-parrafo{
+                font-size: 3rem;
+                margin: 30px 0px 30px 0px;
             }
-            .parrafo{
-                top: 10%;
-                left: 10%;
-                font-size: 2rem;
-                padding: 0px 12px;
-                .main-parrafo{
-                    font-size: 3rem;
-                    margin: 30px 0px 30px 0px;
-                }
-                .block{
-                    display: inline-block;
-                }
-            }
-            .btn-neon{
-                top: 72%;
-                left: 22%;
-                padding: 10px 20px;
+            .block{
+                display: block;
             }
         }
+        .btn-neon{
+            top: 83%;
+            left: 30%;
+            padding: 10px 20px;
+            text-align: center;
+        }
     }
+}
 
 
 @media screen and (min-width:425px) and (max-width:767px){
         .index__contenido{
-            .signo{
-                font-size: 7rem;
+            .signo_abierto{
+                left: 5%;
+                top: 0%;
+                p{
+                    font-size: 7rem;
+                }
             }
-            .abierto{
-                top: 0;
-                left: 4%;
+            .signo_cierre{
+                top: 65%;
+                left: 85%;
+                p{
+                    font-size: 7rem;
+                }
             }
             .parrafo{
-                top: 20%;
+                top: 18%;
                 left: 12%;
                 font-size: 2.4rem;
                 padding: 0px 12px;
+                text-align: left;
                 .main-parrafo{
                     font-size: 3.2rem;
-                    margin: 30px 0px 30px 0px;
-                }
-                .block{
-                    display: inline-block;
-                }
-            }
-            .cierre{
-                top: 53%;
-                left: 89%;
-            }
-            .btn-neon{
-                top: 75%;
-                left: 24%;
-                padding: 15px 25px;
-            }
-        }
-    }
-
-@media screen and (min-width:768px) and (max-width:1023px){
-        .index__contenido{
-            .signo{
-                font-size:10rem;
-            }
-            .abierto{
-                top: 0;
-                left: 4%;
-            }
-            .parrafo{
-                top: 24%;
-                left: 12%;
-                font-size: 2.4rem;
-                padding-right: 20px;
-                .main-parrafo{
-                    font-size: 5rem;
                     margin: 30px 0px 30px 0px;
                 }
                 .block{
                     display: block;
                 }
             }
-            .cierre{
-                top: 53%;
-                left: 86%;
+            .btn-neon{
+                top: 85%;
+                left: 30%;
+                padding: 10px 20px;
+                text-align: center;
+            }
+        }
+    }
+
+@media screen and (min-width:768px) and (max-width:1023px){
+        .index__contenido{
+            .signo_abierto{
+                left: 5%;
+                top: 0%;
+                p{
+                    font-size: 8rem;
+                }
+            }
+            .signo_cierre{
+                top: 60%;
+                left: 85%;
+                p{
+                    font-size: 8rem;
+                }
+            }
+            .parrafo{
+                top: 20%;
+                left: 15%;
+                font-size: 2.4rem;
+                padding-right: 20px;
+                .main-parrafo{
+                    font-size: 5rem;
+                    margin: 30px 0px 20px 0px;
+                }
+                .block{
+                    display: block;
+                }
             }
             .btn-neon{
-                top: 75%;
+                top: 83%;
                 left: 40%;
             }
         }
@@ -216,33 +226,38 @@
 
 @media screen and (min-width:1024px) and (max-width:1439px){
         .index__contenido{
-            .signo{
-                font-size:10rem;
+            .signo_abierto{
+                font-size: 8rem;
+                left: 5%;
+                top: 0%;
+                p{
+                    font-size: 9rem;
+                }
             }
-            .abierto{
-                top: 0;
-                left: 7%;
+            .signo_cierre{
+                top: 55%;
+                left: 90%;
+                p{
+                    font-size: 9rem;
+                }
             }
             .parrafo{
                 top: 17%;
                 left: 20%;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 padding-right: 20px;
                 .main-parrafo{
-                    font-size: 6rem;
-                    margin: 40px 0px;
+                    font-size: 5rem;
+                    margin: 30px 0px 15px 0px;
                 }
                 .block{
                     display: block;
                 }
             }
-            .cierre{
-                top: 50%;
-                left: 85%;
-            }
+
             .btn-neon{
-                top: 75%;
-                left: 40%;
+                top: 82%;
+                left: 42%;
             }
         }
     }   

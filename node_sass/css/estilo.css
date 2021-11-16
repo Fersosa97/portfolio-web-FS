@@ -134,7 +134,7 @@ body {
           box-shadow: 0 0 10px #db4326, 0 0 40px, #db4326 0 0 80px;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
-  color: #05111c;
+  color: #edf5f7;
 }
 
 .index__contenido .btn-neon:hover #span1 {
@@ -209,120 +209,134 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .index__contenido .signo {
+  .index__contenido .signo_abierto, .index__contenido .signo_cierre {
     display: none;
   }
   .index__contenido .parrafo {
-    top: 10%;
+    top: 15%;
     left: 10%;
     font-size: 2rem;
     padding: 0px 12px;
+    text-align: center;
   }
   .index__contenido .parrafo .main-parrafo {
     font-size: 3rem;
     margin: 30px 0px 30px 0px;
   }
   .index__contenido .parrafo .block {
-    display: inline-block;
+    display: block;
   }
   .index__contenido .btn-neon {
-    top: 72%;
-    left: 22%;
+    top: 83%;
+    left: 30%;
     padding: 10px 20px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  .index__contenido .signo {
+  .index__contenido .signo_abierto {
+    left: 5%;
+    top: 0%;
+  }
+  .index__contenido .signo_abierto p {
     font-size: 7rem;
   }
-  .index__contenido .abierto {
-    top: 0;
-    left: 4%;
+  .index__contenido .signo_cierre {
+    top: 65%;
+    left: 85%;
+  }
+  .index__contenido .signo_cierre p {
+    font-size: 7rem;
   }
   .index__contenido .parrafo {
-    top: 20%;
+    top: 18%;
     left: 12%;
     font-size: 2.4rem;
     padding: 0px 12px;
+    text-align: left;
   }
   .index__contenido .parrafo .main-parrafo {
     font-size: 3.2rem;
     margin: 30px 0px 30px 0px;
   }
   .index__contenido .parrafo .block {
-    display: inline-block;
-  }
-  .index__contenido .cierre {
-    top: 53%;
-    left: 89%;
+    display: block;
   }
   .index__contenido .btn-neon {
-    top: 75%;
-    left: 24%;
-    padding: 15px 25px;
+    top: 85%;
+    left: 30%;
+    padding: 10px 20px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .index__contenido .signo {
-    font-size: 10rem;
+  .index__contenido .signo_abierto {
+    left: 5%;
+    top: 0%;
   }
-  .index__contenido .abierto {
-    top: 0;
-    left: 4%;
+  .index__contenido .signo_abierto p {
+    font-size: 8rem;
+  }
+  .index__contenido .signo_cierre {
+    top: 60%;
+    left: 85%;
+  }
+  .index__contenido .signo_cierre p {
+    font-size: 8rem;
   }
   .index__contenido .parrafo {
-    top: 24%;
-    left: 12%;
+    top: 20%;
+    left: 15%;
     font-size: 2.4rem;
     padding-right: 20px;
   }
   .index__contenido .parrafo .main-parrafo {
     font-size: 5rem;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px 20px 0px;
   }
   .index__contenido .parrafo .block {
     display: block;
   }
-  .index__contenido .cierre {
-    top: 53%;
-    left: 86%;
-  }
   .index__contenido .btn-neon {
-    top: 75%;
+    top: 83%;
     left: 40%;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .index__contenido .signo {
-    font-size: 10rem;
+  .index__contenido .signo_abierto {
+    font-size: 8rem;
+    left: 5%;
+    top: 0%;
   }
-  .index__contenido .abierto {
-    top: 0;
-    left: 7%;
+  .index__contenido .signo_abierto p {
+    font-size: 9rem;
+  }
+  .index__contenido .signo_cierre {
+    top: 55%;
+    left: 90%;
+  }
+  .index__contenido .signo_cierre p {
+    font-size: 9rem;
   }
   .index__contenido .parrafo {
     top: 17%;
     left: 20%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-right: 20px;
   }
   .index__contenido .parrafo .main-parrafo {
-    font-size: 6rem;
-    margin: 40px 0px;
+    font-size: 5rem;
+    margin: 30px 0px 15px 0px;
   }
   .index__contenido .parrafo .block {
     display: block;
   }
-  .index__contenido .cierre {
-    top: 50%;
-    left: 85%;
-  }
   .index__contenido .btn-neon {
-    top: 75%;
-    left: 40%;
+    top: 82%;
+    left: 42%;
   }
 }
 
@@ -374,6 +388,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #004e64;
 }
 
 .card-info .card-body .title-card {
@@ -418,16 +433,17 @@ body {
   font-family: 'Russo One', sans-serif;
   font-size: 4rem;
   color: #004e64;
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 800;
-  margin: 20px 60px;
+  margin: 10px auto;
   text-align: center;
-  color: #05111c;
+  text-decoration: underline;
 }
 
 .game .wrap {
   width: 1000px;
   margin: 25px auto;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,6 +605,12 @@ body {
 
 .fotos .imagenesTandil .item .item-text {
   padding: 1em;
+  color: #004e64;
+  text-align: justify;
+}
+
+.fotos .imagenesTandil .item .item-text h3 {
+  text-align: left;
 }
 
 .fotos .imagenesTandil .item .item-img {
@@ -598,14 +620,14 @@ body {
   border-top-right-radius: 8px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 424px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .game {
     margin: 5% 0px;
   }
-  .game .title-game {
-    font-size: 2rem;
+  .game .content-game .title-game {
+    font-size: 1.8rem;
+    padding: 0px 20px;
     font-weight: 800;
-    margin: 20px 30px;
   }
   .game .wrap {
     max-width: 300px;
@@ -632,14 +654,14 @@ body {
   }
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .game {
     margin: 5% 0px;
   }
-  .game .title-game {
-    font-size: 2rem;
+  .game .content-game .title-game {
+    font-size: 2.3rem;
+    padding: 0px 40px;
     font-weight: 800;
-    margin: 20px 30px;
   }
   .game .wrap {
     max-width: 400px;
@@ -666,14 +688,14 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .game {
     margin: 5% 0px;
   }
-  .game .title-game {
-    font-size: 2.5rem;
+  .game .content-game .title-game {
+    font-size: 2.6rem;
+    padding: 0px 40px;
     font-weight: 800;
-    margin: 20px 40px;
   }
   .game .wrap {
     max-width: 700px;
@@ -697,6 +719,9 @@ body {
   }
   .game .wrap .tarjeta-wrap .tarjeta .atras a {
     margin: 3px;
+  }
+  .container .card-info .row .img-fluid {
+    height: 100%;
   }
 }
 
@@ -934,6 +959,12 @@ body {
 }
 
 @media (max-width: 440px) {
+  .title_portfolio {
+    padding: 10px;
+  }
+  .title_portfolio h1 {
+    font-size: 2rem;
+  }
   .wrapper .center-line {
     display: none;
   }
@@ -1244,6 +1275,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #db4326;
 }
 
 .miServicios .services .box .back-face p {
@@ -1424,7 +1456,7 @@ body {
 }
 
 .formulario .logo span {
-  color: #B70E21;
+  color: #db4326;
 }
 
 .formulario .contact-wrapper {
@@ -1528,6 +1560,12 @@ body {
   }
   .formulario .contact-wrapper .contact-info h4, .formulario .contact-wrapper .contact-info ul, .formulario .contact-wrapper .contact-info p {
     text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .formulario {
+    margin: 2% 0px;
   }
 }
 

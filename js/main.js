@@ -1,7 +1,7 @@
 const typed = new Typed(".typed", {
     strings: [
         "<i>Web Developer</i>", 
-        "<i>Recruiter IT</i>", 
+        "<i>Technical Recruiter</i>", 
         "<i>Business Administrator</i>"
     ],
     stringsElement: "#cadenas-texto",
