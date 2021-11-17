@@ -1588,10 +1588,6 @@ footer .social-media a {
   color: #05111c;
 }
 
-.navColor {
-  display: none;
-}
-
 .page_404 {
   padding: 40px 0;
   background: #fff;
@@ -1658,10 +1654,6 @@ footer .social-media a {
 .contant_box_404 .link_404 a:hover {
   background-color: #fff;
   color: #004e64;
-}
-
-footer {
-  display: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
