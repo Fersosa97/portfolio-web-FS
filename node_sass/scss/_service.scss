@@ -16,7 +16,6 @@
             margin-bottom: 0;
             li{
                display: inline-block; 
-               list-style: circle;
                padding: 10px;
                &:hover{
                    text-decoration: underline;
@@ -85,12 +84,14 @@
                 box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
                 transition: all 0.5s ease;
                 span{
+                    @include titulos;
                     font-size: 22px;
                     font-weight: 600;
                     text-transform: uppercase;  
                     color: $bg_naranja;
                 }
                 p{
+                    color: $bg_clarito;
                     margin-top: 10px;
                     text-align: left;  
                 }
@@ -269,14 +270,10 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             .box{
                 width: 350px;
-                .front-face{
-
-                }
             }
         }
-    }
-    
-    
+    }   
+  
 }
 
 

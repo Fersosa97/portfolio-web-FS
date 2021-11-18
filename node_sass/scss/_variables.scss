@@ -16,6 +16,17 @@ $bg_celeste: #c5e0e6;
     font-size: 4rem;
     color: $bg_azul;
 }
+@mixin propiedadTarjetas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+}
+
+
 @mixin contacto{
     width: 100%;
     padding: .7em;
@@ -38,9 +49,11 @@ $bg_celeste: #c5e0e6;
     box-shadow: 0 0 0 4px $bg_azul, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 
-@mixin button{
-
+@mixin texto{
+    font-family: 'Russo One', sans-serif;
+    color: $bg_azul;
 }
+
 @mixin iconos{
     @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 }

@@ -14,10 +14,13 @@
         flex-direction: column;
         color: $bg_azul;
         .title-card{
+            @include titulos;
             font-size: 3rem;
             text-align: center;
+            font-weight: 600;
         }
         .text-card{
+            @include texto;
             font-size: 1.2rem;
             text-align: justify;
             letter-spacing: 1px;
@@ -26,6 +29,7 @@
         .btn-danger{
             background-color: $bg_oscuro;
             border-color: $bg_naranja;
+            font-weight: 400;
         }
         .text-btn{
             margin-top: 60px;
@@ -51,7 +55,6 @@
             font-weight: 800;
             margin: 10px auto;
             text-align: center;
-            text-decoration: underline;
         }
     }
     .wrap{
@@ -98,12 +101,13 @@
                     align-items: center;
                     text-align: center;
                     background-color: $bg_oscuro;
-                    color: $bg_claro;
                     border-radius: 8px; 
                     @include propiedadTarjetas;
                     p{
+                        @include texto;
                         font-size: 1.5rem;
                         font-size: bold;
+                        color: $bg_claro;
                     }
                     a{
                         display: block;
@@ -163,10 +167,16 @@
             }
             .item-text{
                 padding: 1em;
-                color: $bg_azul;
                 text-align: justify;
                 h3{
+                    @include titulos;
                     text-align: left;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                p{
+                    @include texto;
+                    color: $bg_oscuro;
                 }
             }
             .item-img{
